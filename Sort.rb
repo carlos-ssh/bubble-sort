@@ -7,6 +7,7 @@ class Sort
         until left >= rightmost do
           if list[left] > list[left+1]
             list[left], list[left+1] = list[left+1], list[left]
+            ordered_flag = false
           end
         end
         rightmost -= 1
