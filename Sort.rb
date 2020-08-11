@@ -6,6 +6,7 @@ class Sort
         left = 0
         until left >= rightmost do
           if list[left] > list[left+1]
+            list[left], list[left+1] = list[left+1], list[left]
           end
         end
         rightmost -= 1
