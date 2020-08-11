@@ -9,6 +9,7 @@ class Sort
             list[left], list[left+1] = list[left+1], list[left]
             ordered_flag = false
           end
+          left += 1
         end
         rightmost -= 1
       end
