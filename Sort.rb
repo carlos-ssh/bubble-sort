@@ -1,12 +1,12 @@
-class Sort
-  def bubble_sort list
+class main_sort
+  def bubble_sort(list)
     rightmost = list.length - 1
-    until rightmost < 1 do
+    until rightmost < 1
       ordered_flag = true
       left = 0
-      until left >= rightmost do
-        if list[left] > list[left+1]
-          list[left], list[left+1] = list[left+1], list[left]
+      until left >= rightmost
+        if list[left] > list[left + 1]
+          list[left], list[left + 1] = list[left + 1], list[left]
             ordered_flag = false
         end
         left += 1
@@ -17,14 +17,14 @@ class Sort
     return list
   end
 
-  def bubble_sort_by list
+  def bubble_sort_by(list)
     rightmost = list.length - 1
-    until rightmost < 1 do
+    until rightmost < 1
       ordered_flag = true
       left = 0
-      until left >= rightmost do
-        if yield(list[left], list[left+1]) > 0
-          list[left] , list[left+1] = list[left+1] , list[left]
+      until left >= rightmost
+        if yield(list[left], list[left + 1]).positive?
+          list[left], list[left + 1] = list[left + 1], list[left]
           ordered_flag = false
         end
         left+=1
