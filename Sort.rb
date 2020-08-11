@@ -1,4 +1,4 @@
-class mi_lista
+class lista
   def bubble_sort(list)
     rightmost = list.length - 1
     until rightmost < 1
