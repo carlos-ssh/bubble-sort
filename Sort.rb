@@ -14,5 +14,6 @@ class Sort
         return list if ordered_flag
         rightmost -= 1
       end
+      return list
   end
 end
