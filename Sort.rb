@@ -1,4 +1,4 @@
-class sortLista
+
   def bubble_sort(list)
     rightmost = list.length - 1
     until rightmost < 1
@@ -38,4 +38,3 @@ class sortLista
     end
     return list
   end
-end
