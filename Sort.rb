@@ -5,7 +5,8 @@ class Sort
         ordered_flag = true
         left = 0
         until left >= rightmost do
-            
+          if list[left] > list[left+1]
+          end
         end
         rightmost -= 1
       end
