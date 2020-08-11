@@ -1,5 +1,5 @@
 class Sort
-  def bubble_sort
+  def bubble_sort list
     rightmost = list.length - 1
       until rightmost < 1 do
         ordered_flag = true
