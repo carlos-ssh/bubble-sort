@@ -32,6 +32,6 @@ def bubble_sort_by(list)
     return list if ordered_flag
 
     rightmost -= 1
-    end
+  end
   list
 end
